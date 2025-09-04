@@ -1,0 +1,273 @@
+week,date,home team,away team
+1,Thursday,Philadelphia Eagles,Dallas Cowboys
+1,Friday,Los Angeles Chargers,Kansas City Chiefs
+1,Sunday,Atlanta Falcons,Tampa Bay Buccaneers
+1,Sunday,Cleveland Browns,Cincinnati Bengals
+1,Sunday,Indianapolis Colts,Miami Dolphins
+1,Sunday,Jacksonville Jaguars,Carolina Panthers
+1,Sunday,New Orleans Saints,Arizona Cardinals
+1,Sunday,New England Patriots,Las Vegas Raiders
+1,Sunday,New York Jets,Pittsburgh Steelers
+1,Sunday,Washington Commanders,New York Giants
+1,Sunday,Denver Broncos,Tennessee Titans
+1,Sunday,Seattle Seahawks,San Francisco 49ers
+1,Sunday,Green Bay Packers,Detroit Lions
+1,Sunday,Los Angeles Rams,Houston Texans
+1,Sunday,Buffalo Bills,Baltimore Ravens
+1,Monday,Chicago Bears,Minnesota Vikings
+2,Thursday,Green Bay Packers,Washington Commanders
+2,Sunday,Cincinnati Bengals,Jacksonville Jaguars
+2,Sunday,Dallas Cowboys,New York Giants
+2,Sunday,Detroit Lions,Chicago Bears
+2,Sunday,Miami Dolphins,New England Patriots
+2,Sunday,New Orleans Saints,San Francisco 49ers
+2,Sunday,New York Jets,Buffalo Bills
+2,Sunday,Tennessee Titans,Los Angeles Rams
+2,Sunday,Pittsburgh Steelers,Seattle Seahawks
+2,Sunday,Baltimore Ravens,Cleveland Browns
+2,Sunday,Indianapolis Colts,Denver Broncos
+2,Sunday,Arizona Cardinals,Carolina Panthers
+2,Sunday,Kansas City Chiefs,Philadelphia Eagles
+2,Sunday,Minnesota Vikings,Atlanta Falcons
+2,Monday,Houston Texans,Tampa Bay Buccaneers
+2,Monday,Las Vegas Raiders,Los Angeles Chargers
+3,Thursday,Buffalo Bills,Miami Dolphins
+3,Sunday,Carolina Panthers,Atlanta Falcons
+3,Sunday,Cleveland Browns,Green Bay Packers
+3,Sunday,Jacksonville Jaguars,Houston Texans
+3,Sunday,Minnesota Vikings,Cincinnati Bengals
+3,Sunday,New England Patriots,Pittsburgh Steelers
+3,Sunday,Tennessee Titans,Indianapolis Colts
+3,Sunday,Philadelphia Eagles,Los Angeles Rams
+3,Sunday,Tampa Bay Buccaneers,New York Jets
+3,Sunday,Washington Commanders,Las Vegas Raiders
+3,Sunday,Los Angeles Chargers,Denver Broncos
+3,Sunday,Seattle Seahawks,New Orleans Saints
+3,Sunday,Chicago Bears,Dallas Cowboys
+3,Sunday,San Francisco 49ers,Arizona Cardinals
+3,Sunday,New York Giants,Kansas City Chiefs
+3,Monday,Baltimore Ravens,Detroit Lions
+4,Thursday,Arizona Cardinals,Seattle Seahawks
+4,Sunday,Pittsburgh Steelers,Minnesota Vikings
+4,Sunday,Atlanta Falcons,Washington Commanders
+4,Sunday,Buffalo Bills,New Orleans Saints
+4,Sunday,Detroit Lions,Cleveland Browns
+4,Sunday,Houston Texans,Tennessee Titans
+4,Sunday,New England Patriots,Carolina Panthers
+4,Sunday,New York Giants,Los Angeles Chargers
+4,Sunday,Tampa Bay Buccaneers,Philadelphia Eagles
+4,Sunday,Los Angeles Rams,Indianapolis Colts
+4,Sunday,San Francisco 49ers,Jacksonville Jaguars
+4,Sunday,Kansas City Chiefs,Baltimore Ravens
+4,Sunday,Las Vegas Raiders,Chicago Bears
+4,Sunday,Dallas Cowboys,Green Bay Packers
+4,Monday,Miami Dolphins,New York Jets
+4,Monday,Denver Broncos,Cincinnati Bengals
+5,Thursday,Los Angeles Rams,San Francisco 49ers
+5,Sunday,Cleveland Browns,Minnesota Vikings
+5,Sunday,Carolina Panthers,Miami Dolphins
+5,Sunday,Indianapolis Colts,Las Vegas Raiders
+5,Sunday,New Orleans Saints,New York Giants
+5,Sunday,New York Jets,Dallas Cowboys
+5,Sunday,Philadelphia Eagles,Denver Broncos
+5,Sunday,Baltimore Ravens,Houston Texans
+5,Sunday,Arizona Cardinals,Tennessee Titans
+5,Sunday,Seattle Seahawks,Tampa Bay Buccaneers
+5,Sunday,Cincinnati Bengals,Detroit Lions
+5,Sunday,Los Angeles Chargers,Washington Commanders
+5,Sunday,Buffalo Bills,New England Patriots
+5,Monday,Jacksonville Jaguars,Kansas City Chiefs
+6,Thursday,New York Giants,Philadelphia Eagles
+6,Sunday,New York Jets,Denver Broncos
+6,Sunday,Carolina Panthers,Dallas Cowboys
+6,Sunday,Indianapolis Colts,Arizona Cardinals
+6,Sunday,Jacksonville Jaguars,Seattle Seahawks
+6,Sunday,Miami Dolphins,Los Angeles Chargers
+6,Sunday,Pittsburgh Steelers,Cleveland Browns
+6,Sunday,Baltimore Ravens,Los Angeles Rams
+6,Sunday,Tampa Bay Buccaneers,San Francisco 49ers
+6,Sunday,Las Vegas Raiders,Tennessee Titans
+6,Sunday,Green Bay Packers,Cincinnati Bengals
+6,Sunday,New Orleans Saints,New England Patriots
+6,Sunday,Kansas City Chiefs,Detroit Lions
+6,Monday,Atlanta Falcons,Buffalo Bills
+6,Monday,Washington Commanders,Chicago Bears
+7,Thursday,Cincinnati Bengals,Pittsburgh Steelers
+7,Sunday,Jacksonville Jaguars,Los Angeles Rams
+7,Sunday,Chicago Bears,New Orleans Saints
+7,Sunday,Cleveland Browns,Miami Dolphins
+7,Sunday,Kansas City Chiefs,Las Vegas Raiders
+7,Sunday,Minnesota Vikings,Philadelphia Eagles
+7,Sunday,New York Jets,Carolina Panthers
+7,Sunday,Tennessee Titans,New England Patriots
+7,Sunday,Denver Broncos,New York Giants
+7,Sunday,Los Angeles Chargers,Indianapolis Colts
+7,Sunday,Arizona Cardinals,Green Bay Packers
+7,Sunday,Dallas Cowboys,Washington Commanders
+7,Sunday,San Francisco 49ers,Atlanta Falcons
+7,Monday,Detroit Lions,Tampa Bay Buccaneers
+7,Monday,Seattle Seahawks,Houston Texans
+8,Thursday,Los Angeles Chargers,Minnesota Vikings
+8,Sunday,Atlanta Falcons,Miami Dolphins
+8,Sunday,Carolina Panthers,Buffalo Bills
+8,Sunday,Cincinnati Bengals,New York Jets
+8,Sunday,Houston Texans,San Francisco 49ers
+8,Sunday,New England Patriots,Cleveland Browns
+8,Sunday,Philadelphia Eagles,New York Giants
+8,Sunday,Baltimore Ravens,Chicago Bears
+8,Sunday,New Orleans Saints,Tampa Bay Buccaneers
+8,Sunday,Indianapolis Colts,Tennessee Titans
+8,Sunday,Denver Broncos,Dallas Cowboys
+8,Sunday,Pittsburgh Steelers,Green Bay Packers
+8,Monday,Kansas City Chiefs,Washington Commanders
+9,Thursday,Miami Dolphins,Baltimore Ravens
+9,Sunday,Cincinnati Bengals,Chicago Bears
+9,Sunday,Detroit Lions,Minnesota Vikings
+9,Sunday,Green Bay Packers,Carolina Panthers
+9,Sunday,Houston Texans,Denver Broncos
+9,Sunday,New England Patriots,Atlanta Falcons
+9,Sunday,New York Giants,San Francisco 49ers
+9,Sunday,Tennessee Titans,Los Angeles Chargers
+9,Sunday,Pittsburgh Steelers,Indianapolis Colts
+9,Sunday,Las Vegas Raiders,Jacksonville Jaguars
+9,Sunday,Los Angeles Rams,New Orleans Saints
+9,Sunday,Buffalo Bills,Kansas City Chiefs
+9,Sunday,Washington Commanders,Seattle Seahawks
+9,Monday,Dallas Cowboys,Arizona Cardinals
+10,Thursday,Denver Broncos,Las Vegas Raiders
+10,Sunday,Indianapolis Colts,Atlanta Falcons
+10,Sunday,Carolina Panthers,New Orleans Saints
+10,Sunday,Chicago Bears,New York Giants
+10,Sunday,Houston Texans,Jacksonville Jaguars
+10,Sunday,Miami Dolphins,Buffalo Bills
+10,Sunday,Minnesota Vikings,Baltimore Ravens
+10,Sunday,New York Jets,Cleveland Browns
+10,Sunday,Tampa Bay Buccaneers,New England Patriots
+10,Sunday,Seattle Seahawks,Arizona Cardinals
+10,Sunday,San Francisco 49ers,Los Angeles Rams
+10,Sunday,Washington Commanders,Detroit Lions
+10,Sunday,Los Angeles Chargers,Pittsburgh Steelers
+10,Monday,Green Bay Packers,Philadelphia Eagles
+11,Thursday,New England Patriots,New York Jets
+11,Sunday,Miami Dolphins,Washington Commanders
+11,Sunday,Atlanta Falcons,Carolina Panthers
+11,Sunday,Buffalo Bills,Tampa Bay Buccaneers
+11,Sunday,Jacksonville Jaguars,Los Angeles Chargers
+11,Sunday,Minnesota Vikings,Chicago Bears
+11,Sunday,New York Giants,Green Bay Packers
+11,Sunday,Tennessee Titans,Houston Texans
+11,Sunday,Pittsburgh Steelers,Cincinnati Bengals
+11,Sunday,Arizona Cardinals,San Francisco 49ers
+11,Sunday,Los Angeles Rams,Seattle Seahawks
+11,Sunday,Cleveland Browns,Baltimore Ravens
+11,Sunday,Denver Broncos,Kansas City Chiefs
+11,Sunday,Philadelphia Eagles,Detroit Lions
+11,Monday,Las Vegas Raiders,Dallas Cowboys
+12,Thursday,Houston Texans,Buffalo Bills
+12,Sunday,Chicago Bears,Pittsburgh Steelers
+12,Sunday,Cincinnati Bengals,New England Patriots
+12,Sunday,Detroit Lions,New York Giants
+12,Sunday,Green Bay Packers,Minnesota Vikings
+12,Sunday,Kansas City Chiefs,Indianapolis Colts
+12,Sunday,Tennessee Titans,Seattle Seahawks
+12,Sunday,Baltimore Ravens,New York Jets
+12,Sunday,Arizona Cardinals,Jacksonville Jaguars
+12,Sunday,Las Vegas Raiders,Cleveland Browns
+12,Sunday,Dallas Cowboys,Philadelphia Eagles
+12,Sunday,New Orleans Saints,Atlanta Falcons
+12,Sunday,Los Angeles Rams,Tampa Bay Buccaneers
+12,Monday,San Francisco 49ers,Carolina Panthers
+13,Thursday,Detroit Lions,Green Bay Packers
+13,Thursday,Dallas Cowboys,Kansas City Chiefs
+13,Thursday,Baltimore Ravens,Cincinnati Bengals
+13,Friday,Philadelphia Eagles,Chicago Bears
+13,Sunday,Carolina Panthers,Los Angeles Rams
+13,Sunday,Cleveland Browns,San Francisco 49ers
+13,Sunday,Indianapolis Colts,Houston Texans
+13,Sunday,Miami Dolphins,New Orleans Saints
+13,Sunday,New York Jets,Atlanta Falcons
+13,Sunday,Tennessee Titans,Jacksonville Jaguars
+13,Sunday,Tampa Bay Buccaneers,Arizona Cardinals
+13,Sunday,Seattle Seahawks,Minnesota Vikings
+13,Sunday,Pittsburgh Steelers,Buffalo Bills
+13,Sunday,Los Angeles Chargers,Las Vegas Raiders
+13,Sunday,Washington Commanders,Denver Broncos
+13,Monday,New England Patriots,New York Giants
+14,Thursday,Detroit Lions,Dallas Cowboys
+14,Sunday,Atlanta Falcons,Seattle Seahawks
+14,Sunday,Cleveland Browns,Tennessee Titans
+14,Sunday,Green Bay Packers,Chicago Bears
+14,Sunday,Jacksonville Jaguars,Indianapolis Colts
+14,Sunday,Minnesota Vikings,Washington Commanders
+14,Sunday,New York Jets,Miami Dolphins
+14,Sunday,Baltimore Ravens,Pittsburgh Steelers
+14,Sunday,Tampa Bay Buccaneers,New Orleans Saints
+14,Sunday,Las Vegas Raiders,Denver Broncos
+14,Sunday,Buffalo Bills,Cincinnati Bengals
+14,Sunday,Arizona Cardinals,Los Angeles Rams
+14,Sunday,Kansas City Chiefs,Houston Texans
+14,Monday,Los Angeles Chargers,Philadelphia Eagles
+15,Thursday,Tampa Bay Buccaneers,Atlanta Falcons
+15,Sunday,Chicago Bears,Cleveland Browns
+15,Sunday,Cincinnati Bengals,Baltimore Ravens
+15,Sunday,Houston Texans,Arizona Cardinals
+15,Sunday,Jacksonville Jaguars,New York Jets
+15,Sunday,Kansas City Chiefs,Los Angeles Chargers
+15,Sunday,New England Patriots,Buffalo Bills
+15,Sunday,New York Giants,Washington Commanders
+15,Sunday,Philadelphia Eagles,Las Vegas Raiders
+15,Sunday,Denver Broncos,Green Bay Packers
+15,Sunday,New Orleans Saints,Carolina Panthers
+15,Sunday,Los Angeles Rams,Detroit Lions
+15,Sunday,Seattle Seahawks,Indianapolis Colts
+15,Sunday,San Francisco 49ers,Tennessee Titans
+15,Sunday,Dallas Cowboys,Minnesota Vikings
+15,Monday,Pittsburgh Steelers,Miami Dolphins
+16,Thursday,Seattle Seahawks,Los Angeles Rams
+16,Saturday,Chicago Bears,Green Bay Packers
+16,Saturday,Washington Commanders,Philadelphia Eagles
+16,Sunday,Carolina Panthers,Tampa Bay Buccaneers
+16,Sunday,Cleveland Browns,Buffalo Bills
+16,Sunday,Dallas Cowboys,Los Angeles Chargers
+16,Sunday,New Orleans Saints,New York Jets
+16,Sunday,New York Giants,Minnesota Vikings
+16,Sunday,Tennessee Titans,Kansas City Chiefs
+16,Sunday,Baltimore Ravens,New England Patriots
+16,Sunday,Arizona Cardinals,Atlanta Falcons
+16,Sunday,Denver Broncos,Jacksonville Jaguars
+16,Sunday,Detroit Lions,Pittsburgh Steelers
+16,Sunday,Houston Texans,Las Vegas Raiders
+16,Sunday,Miami Dolphins,Cincinnati Bengals
+16,Monday,Indianapolis Colts,San Francisco 49ers
+17,Thursday,Washington Commanders,Dallas Cowboys
+17,Thursday,Minnesota Vikings,Detroit Lions
+17,Thursday,Kansas City Chiefs,Denver Broncos
+17,Sunday,Carolina Panthers,Seattle Seahawks
+17,Sunday,Cincinnati Bengals,Arizona Cardinals
+17,Sunday,Cleveland Browns,Pittsburgh Steelers
+17,Sunday,Indianapolis Colts,Jacksonville Jaguars
+17,Sunday,Green Bay Packers,Baltimore Ravens
+17,Sunday,Miami Dolphins,Tampa Bay Buccaneers
+17,Sunday,New York Jets,New England Patriots
+17,Sunday,Tennessee Titans,New Orleans Saints
+17,Sunday,Las Vegas Raiders,New York Giants
+17,Sunday,Los Angeles Chargers,Houston Texans
+17,Sunday,Buffalo Bills,Philadelphia Eagles
+17,Sunday,San Francisco 49ers,Chicago Bears
+17,Monday,Atlanta Falcons,Los Angeles Rams
+18,Sunday,Atlanta Falcons,New Orleans Saints
+18,Sunday,Buffalo Bills,New York Jets
+18,Sunday,Chicago Bears,Detroit Lions
+18,Sunday,Cincinnati Bengals,Cleveland Browns
+18,Sunday,Denver Broncos,Los Angeles Chargers
+18,Sunday,Houston Texans,Indianapolis Colts
+18,Sunday,Jacksonville Jaguars,Tennessee Titans
+18,Sunday,Minnesota Vikings,Green Bay Packers
+18,Sunday,New England Patriots,Miami Dolphins
+18,Sunday,New York Giants,Dallas Cowboys
+18,Sunday,Philadelphia Eagles,Washington Commanders
+18,Sunday,Pittsburgh Steelers,Baltimore Ravens
+18,Sunday,Las Vegas Raiders,Kansas City Chiefs
+18,Sunday,Los Angeles Rams,Arizona Cardinals
+18,Sunday,San Francisco 49ers,Seattle Seahawks
+18,Sunday,Tampa Bay Buccaneers,Carolina Panthers
