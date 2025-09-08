@@ -66,13 +66,24 @@ def scrape_week_results(year, week):
 
     for block in game_blocks:
         tables = [t for t in block.find_all("table") if "stats" not in t.get("class", [])]
-        for table in tables:
-            df = pd.read_html(StringIO(str(table)))[0]
-            date = df.iloc[0, 0]
-            away_team, away_score = df.iloc[1, 0], int(df.iloc[1, 1])
-            home_team, home_score = df.iloc[2, 0], int(df.iloc[2, 1])
-            results.append((home_team, home_score, away_team, away_score, date))
-    time.sleep(2)
+    for table in tables:
+        df = pd.read_html(StringIO(str(table)))[0]
+
+        date = df.iloc[0, 0]
+        away_team = df.iloc[1, 0]
+        home_team = df.iloc[2, 0]
+
+        # Safely parse scores
+        try:
+            away_score = int(df.iloc[1, 1])
+            home_score = int(df.iloc[2, 1])
+        except (ValueError, TypeError):
+            print(f"⚠️ Skipping {away_team} at {home_team} — no final score yet.")
+            continue
+
+        results.append((home_team, home_score, away_team, away_score, date))
+        time.sleep(2)
+        
     return results
 
 
@@ -126,6 +137,8 @@ def update_week(year=2025, week=1):
 if __name__ == "__main__":
     try:
         week = int(input("Enter week number to update: "))
-        update_week(2025, week)
     except ValueError:
         print("❌ Invalid input. Please enter a valid week number.")
+    else:
+        update_week(2025, week)
+
