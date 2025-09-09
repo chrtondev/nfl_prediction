@@ -66,31 +66,30 @@ def scrape_week_results(year, week):
 
     for block in game_blocks:
         tables = [t for t in block.find_all("table") if "stats" not in t.get("class", [])]
-    for table in tables:
-        df = pd.read_html(StringIO(str(table)))[0]
+        for table in tables:
+            df = pd.read_html(StringIO(str(table)))[0]
 
-        date = df.iloc[0, 0]
-        away_team = df.iloc[1, 0]
-        home_team = df.iloc[2, 0]
+            date = df.iloc[0, 0]
+            away_team = df.iloc[1, 0]
+            home_team = df.iloc[2, 0]
 
-        # Safely parse scores
-        try:
-            away_score = int(df.iloc[1, 1])
-            home_score = int(df.iloc[2, 1])
-        except (ValueError, TypeError):
-            print(f"⚠️ Skipping {away_team} at {home_team} — no final score yet.")
-            continue
+            # Safely parse scores
+            try:
+                away_score = int(df.iloc[1, 1])
+                home_score = int(df.iloc[2, 1])
+            except (ValueError, TypeError):
+                print(f"⚠️ Skipping {away_team} at {home_team} — no final score yet.")
+                continue
 
-        results.append((home_team, home_score, away_team, away_score, date))
-        time.sleep(2)
-        
+            results.append((home_team, home_score, away_team, away_score, date))
+            time.sleep(2)
+
     return results
 
 
 def update_week(year=2025, week=1):
     df_active = pd.read_csv(ACTIVE_FILE)
     results = scrape_week_results(year, week)
-    rows = []
 
     for home, hs, away, as_, date in results:
         # Check if already updated
@@ -104,34 +103,33 @@ def update_week(year=2025, week=1):
             print(f"Skipping {home} vs {away}, already updated.")
             continue
 
-        # Get latest Elo before this game
-        latest_home = df_active[df_active["team"] == home].sort_values(by=["year", "week"]).iloc[-1]["elo_before"]
-        latest_away = df_active[df_active["team"] == away].sort_values(by=["year", "week"]).iloc[-1]["elo_before"]
+        # Get Elo before game from predictions
+        latest_home = df_active[(df_active["year"] == year) & (df_active["week"] == week) & (df_active["team"] == home)]["elo_before"].iloc[0]
+        latest_away = df_active[(df_active["year"] == year) & (df_active["week"] == week) & (df_active["team"] == away)]["elo_before"].iloc[0]
 
         # Update Elo
         new_home, new_away, exp_home = update_elo(latest_home, latest_away, hs, as_, True)
 
-        # Record results
-        rows.append({
-            "year": year, "week": week, "team": home,
-            "elo_before": latest_home, "elo_after": new_home,
-            "expected_win": exp_home,
-            "type": "game", "result": "W" if hs > as_ else ("L" if hs < as_ else "T")
-        })
-        rows.append({
-            "year": year, "week": week, "team": away,
-            "elo_before": latest_away, "elo_after": new_away,
-            "expected_win": 1 - exp_home,
-            "type": "game", "result": "W" if as_ > hs else ("L" if as_ < hs else "T")
-        })
+        # Update prediction rows in place
+        df_active.loc[(df_active["year"] == year) & (df_active["week"] == week) & (df_active["team"] == home),
+                      ["elo_after", "type", "result"]] = [
+                          new_home,
+                          "game",
+                          "W" if hs > as_ else ("L" if hs < as_ else "T")
+                      ]
+
+        df_active.loc[(df_active["year"] == year) & (df_active["week"] == week) & (df_active["team"] == away),
+                      ["elo_after", "type", "result"]] = [
+                          new_away,
+                          "game",
+                          "W" if as_ > hs else ("L" if as_ < hs else "T")
+                      ]
 
         print(f"{home} {hs} - {as_} {away} | New Elo: {home} {new_home:.1f}, {away} {new_away:.1f}")
 
-    if rows:
-        df_new = pd.DataFrame(rows)
-        df_active = pd.concat([df_active, df_new], ignore_index=True)
-        df_active.to_csv(ACTIVE_FILE, index=False)
-        print(f"✅ Week {week} results saved to {ACTIVE_FILE}")
+    # Always save back to CSV
+    df_active.to_csv(ACTIVE_FILE, index=False)
+    print(f"✅ Week {week} results updated in {ACTIVE_FILE}")
 
 
 if __name__ == "__main__":
@@ -141,4 +139,3 @@ if __name__ == "__main__":
         print("❌ Invalid input. Please enter a valid week number.")
     else:
         update_week(2025, week)
-
