@@ -45,10 +45,17 @@ def init_active_file():
 
 
 def get_current_elos():
-    """Load latest Elo ratings for each team from active file."""
+    """Load latest Elo ratings for each team from active file.
+       Prefer elo_after if available, otherwise fallback to elo_before."""
     df_active = pd.read_csv(ACTIVE_FILE)
+
+    # Get each team's most recent row
     latest = df_active.sort_values(by=["year", "week"]).groupby("team").tail(1)
-    return dict(zip(latest["team"], latest["elo_before"]))  # use last known Elo
+
+    # Prefer elo_after if it's not NaN, else fallback to elo_before
+    latest["current_elo"] = latest["elo_after"].combine_first(latest["elo_before"])
+
+    return dict(zip(latest["team"], latest["current_elo"]))
 
 
 def predict_week(week: int):
