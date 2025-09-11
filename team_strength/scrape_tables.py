@@ -68,8 +68,8 @@ def scrape_table(url, output_csv=None, table_id=None):
     df = pd.DataFrame(rows, columns=headers)
 
     # Ensure folder exists
-    os.makedirs("scraped_csvs_2024", exist_ok=True)
-    output_path = os.path.join("scraped_csvs_2024", output_csv)
+    os.makedirs("scraped_csvs_2025", exist_ok=True)
+    output_path = os.path.join("scraped_csvs_2025", output_csv)
 
     # Save CSV
     df.to_csv(output_path, index=False)
@@ -102,7 +102,19 @@ if __name__ == "__main__":
         "https://www.teamrankings.com/nfl/stat/opponent-touchdowns-per-game",
         "https://www.teamrankings.com/nfl/stat/opponent-yards-per-game",
         "https://www.teamrankings.com/nfl/stat/opponent-red-zone-scoring-pct",
-        "https://www.teamrankings.com/nfl/stat/opponent-fourth-downs-per-game"
+        # offensice csvs
+        "https://www.teamrankings.com/nfl/stat/opponent-fourth-downs-per-game",
+        "https://www.teamrankings.com/nfl/stat/points-per-game",
+        "https://www.teamrankings.com/nfl/stat/rushing-yards-per-game",
+        "https://www.teamrankings.com/nfl/stat/fourth-downs-per-game",
+        "https://www.teamrankings.com/nfl/stat/third-down-conversion-pct",
+        "https://www.teamrankings.com/nfl/stat/yards-per-game",
+        "https://www.teamrankings.com/nfl/stat/passing-touchdowns-per-game",
+        "https://www.teamrankings.com/nfl/stat/average-team-passer-rating",
+        "https://www.teamrankings.com/nfl/stat/interceptions-thrown-per-game",
+        "https://www.teamrankings.com/nfl/stat/qb-sacked-per-game",
+        "https://www.teamrankings.com/nfl/stat/rushing-touchdowns-per-game",
+        "https://www.teamrankings.com/nfl/stat/rushing-first-downs-per-game"
         
     ]
 
