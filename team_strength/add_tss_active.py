@@ -50,7 +50,7 @@ def get_city_name(team_name: str) -> str:
 
 def add_tss_to_active(week, 
                       active_file="../prediction/nfl_elo_active.csv",
-                      tss_file="scraped_csvs_2024/team_strength_scores.csv",
+                      tss_file="scraped_csvs_2025/team_strength_scores.csv",
                       schedule_file="../prediction/schedule.csv",
                       output_file="../prediction/nfl_elo_active.csv"):
     # Load files

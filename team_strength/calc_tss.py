@@ -2,8 +2,8 @@
 import pandas as pd
 import os
 
-YEAR_COL = "2024"
-FOLDER = "./scraped_csvs_2024"   # folder where CSVs are stored
+YEAR_COL = "2025"
+FOLDER = "./scraped_csvs_2025"   # folder where CSVs are stored
 
 # =======================
 # Weights
