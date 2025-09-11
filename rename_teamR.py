@@ -1,7 +1,7 @@
 import os
 
 # folder where your files are stored
-folder = "./team_strength/scraped_csvs_2024"
+folder = "./team_strength/scraped_csvs_2025"
 
 prefix = "nfl_football_stats_nfl_team_"
 suffix = "_teamrankings_com.csv"
